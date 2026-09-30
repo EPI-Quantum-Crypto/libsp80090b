@@ -1,0 +1,5 @@
+Opening file: 'lab/data/lab2_non_iid/urandom-1bit.bin'
+Loaded 1000000 samples, 1-bit-wide symbols
+
+H_original: 0.856963
+time: 5.59 s

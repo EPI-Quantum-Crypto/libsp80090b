@@ -1,0 +1,12 @@
+vetted-256-full: 256 256 256 256 -> h_out = 251.689764568727055119  not full
+vetted-320-margin: 320 256 256 320 -> h_out = 255.9999999936720594812  FULL ENTROPY
+vetted-512-6.4: 512 256 256 409.6 -> h_out = 256  FULL ENTROPY
+vetted-seed-384: 3072 256 256 384 -> h_out = 256  FULL ENTROPY
+vetted-128-short: 256 256 256 128 -> h_out = 128  not full
+nonvetted-0.99: 512 256 256 409.6 0.99 -> h_out = 253.4400000000000000022  not full
+vetted-thermal: 632 256 256 323.323477 -> h_out = 256  FULL ENTROPY
+nonvetted-drbg-zero-seed: 512 256 256 409.6 0.89312423102387883 -> h_out = 228.6398031421129804774  not full
+nonvetted-openssl: 512 256 256 409.6 0.90771585766455132 -> h_out = 232.3752595621251379188  not full
+nonvetted-urandom-1bit: 512 256 256 409.6 0.85696265506477098 -> h_out = 219.3824396965813708776  not full
+nonvetted-urandom-4bit: 512 256 256 409.6 0.88486134567971064 -> h_out = 226.5245044940059238464  not full
+nonvetted-urandom: 512 256 256 409.6 0.9153836750177643 -> h_out = 234.3382208045476608055  not full

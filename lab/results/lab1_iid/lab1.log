@@ -1,0 +1,3 @@
+aging.bin: chi2 FAIL  LRS FAIL  perm FAIL  H_original = 4.275281  not IID
+biased-1bit.bin: chi2 pass  LRS pass  perm pass  H_original = 0.413507  IID
+drbg-zero-seed.bin: chi2 pass  LRS pass  perm pass  H_original = 7.866148  IID

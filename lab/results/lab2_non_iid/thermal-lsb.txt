@@ -1,0 +1,5 @@
+Opening file: 'lab/data/lab2_non_iid/thermal-lsb.bin'
+Loaded 1000000 samples, 1-bit-wide symbols
+
+H_original: 0.921623
+time: 6.23 s

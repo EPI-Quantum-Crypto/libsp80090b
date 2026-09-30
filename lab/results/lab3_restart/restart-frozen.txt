@@ -1,0 +1,9 @@
+Opening file: 'lab/data/lab3_restart/restart-frozen.bin'
+Loaded 1000000 samples
+H_I: 7.000000
+ALPHA: 5.0251553006530614e-06, X_cutoff: 27
+X_max: 1000
+
+*** Restart Sanity Check Failed ***
+Command exited with non-zero status 255
+time: 37.39 s

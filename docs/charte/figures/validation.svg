@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="400" viewBox="0 0 1000 400">
+<defs>
+<marker id="h11203A" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#11203A"/></marker>
+</defs><rect width="1000" height="400" fill="#FFFFFF"/>
+<rect x="250" y="20" width="500" height="80" rx="10" fill="#11203A" stroke="#11203A" stroke-width="1.5"/>
+<text x="500" y="54" font-family="Arial, Liberation Sans, sans-serif" font-size="20" fill="#FFFFFF" font-weight="bold" font-style="normal" text-anchor="middle">libsp80090b 2.0.0</text>
+<text x="500" y="80" font-family="Arial, Liberation Sans, sans-serif" font-size="14" fill="#FFFFFF" font-weight="normal" font-style="normal" text-anchor="middle">face à l'outil du NIST SP800-90B_EntropyAssessment 1.1.8</text>
+<line x1="500" y1="100" x2="500" y2="140" stroke="#11203A" stroke-width="2"/>
+<line x1="140" y1="140" x2="860" y2="140" stroke="#11203A" stroke-width="2"/>
+<line x1="140" y1="140" x2="140" y2="178" stroke="#11203A" stroke-width="2" marker-end="url(#h11203A)"/>
+<rect x="30" y="180" width="220" height="190" rx="10" fill="#FFFFFF" stroke="#0FB5D6" stroke-width="2"/>
+<rect x="30" y="180" width="220" height="56" rx="10" fill="#0FB5D6"/>
+<rect x="30" y="220" width="220" height="16" fill="#0FB5D6"/>
+<text x="140" y="206" font-family="Arial, Liberation Sans, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold" font-style="normal" text-anchor="middle">Selftest du NIST</text>
+<text x="140" y="227" font-family="Arial, Liberation Sans, sans-serif" font-size="13" fill="#FFFFFF" font-weight="normal" font-style="normal" text-anchor="middle">voie non IID</text>
+<text x="140" y="285" font-family="Arial, Liberation Sans, sans-serif" font-size="15" fill="#1A1A1A" font-weight="normal" font-style="normal" text-anchor="middle">11 jeux de référence</text>
+<text x="140" y="325" font-family="Arial, Liberation Sans, sans-serif" font-size="15" fill="#11203A" font-weight="bold" font-style="normal" text-anchor="middle">écart max 7,2 × 10⁻¹⁴</text>
+<line x1="380" y1="140" x2="380" y2="178" stroke="#11203A" stroke-width="2" marker-end="url(#h11203A)"/>
+<rect x="270" y="180" width="220" height="190" rx="10" fill="#FFFFFF" stroke="#0FB5D6" stroke-width="2"/>
+<rect x="270" y="180" width="220" height="56" rx="10" fill="#0FB5D6"/>
+<rect x="270" y="220" width="220" height="16" fill="#0FB5D6"/>
+<text x="380" y="206" font-family="Arial, Liberation Sans, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold" font-style="normal" text-anchor="middle">Voie IID</text>
+<text x="380" y="227" font-family="Arial, Liberation Sans, sans-serif" font-size="13" fill="#FFFFFF" font-weight="normal" font-style="normal" text-anchor="middle">contre ea_iid</text>
+<text x="380" y="285" font-family="Arial, Liberation Sans, sans-serif" font-size="15" fill="#1A1A1A" font-weight="normal" font-style="normal" text-anchor="middle">statistiques déterministes</text>
+<text x="380" y="325" font-family="Arial, Liberation Sans, sans-serif" font-size="15" fill="#11203A" font-weight="bold" font-style="normal" text-anchor="middle">identiques au bit près</text>
+<line x1="620" y1="140" x2="620" y2="178" stroke="#11203A" stroke-width="2" marker-end="url(#h11203A)"/>
+<rect x="510" y="180" width="220" height="190" rx="10" fill="#FFFFFF" stroke="#0FB5D6" stroke-width="2"/>
+<rect x="510" y="180" width="220" height="56" rx="10" fill="#0FB5D6"/>
+<rect x="510" y="220" width="220" height="16" fill="#0FB5D6"/>
+<text x="620" y="206" font-family="Arial, Liberation Sans, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold" font-style="normal" text-anchor="middle">Campagne des labs</text>
+<text x="620" y="227" font-family="Arial, Liberation Sans, sans-serif" font-size="13" fill="#FFFFFF" font-weight="normal" font-style="normal" text-anchor="middle">tests 1 à 4</text>
+<text x="620" y="285" font-family="Arial, Liberation Sans, sans-serif" font-size="15" fill="#1A1A1A" font-weight="normal" font-style="normal" text-anchor="middle">22 jeux, 52 cas</text>
+<text x="620" y="325" font-family="Arial, Liberation Sans, sans-serif" font-size="15" fill="#11203A" font-weight="bold" font-style="normal" text-anchor="middle">conformes à la théorie</text>
+<line x1="860" y1="140" x2="860" y2="178" stroke="#11203A" stroke-width="2" marker-end="url(#h11203A)"/>
+<rect x="750" y="180" width="220" height="190" rx="10" fill="#FFFFFF" stroke="#11203A" stroke-width="2"/>
+<rect x="750" y="180" width="220" height="56" rx="10" fill="#11203A"/>
+<rect x="750" y="220" width="220" height="16" fill="#11203A"/>
+<text x="860" y="206" font-family="Arial, Liberation Sans, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold" font-style="normal" text-anchor="middle">Revue du code et de l'API</text>
+<text x="860" y="227" font-family="Arial, Liberation Sans, sans-serif" font-size="13" fill="#FFFFFF" font-weight="normal" font-style="normal" text-anchor="middle">constats de la v1.0</text>
+<text x="860" y="285" font-family="Arial, Liberation Sans, sans-serif" font-size="15" fill="#1A1A1A" font-weight="normal" font-style="normal" text-anchor="middle">E1 à E8, R1 à R4 clos</text>
+<text x="860" y="325" font-family="Arial, Liberation Sans, sans-serif" font-size="15" fill="#11203A" font-weight="bold" font-style="normal" text-anchor="middle">M2, C2, L1 ouverts</text>
+</svg>

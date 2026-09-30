@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Private request (unpublished data, collaboration)
+    url: https://github.com/EPI-Quantum-Crypto/libsp80090b/blob/main/CONTACT.md
+    about: For requests that cannot be discussed publicly, contact the maintainer by e-mail.

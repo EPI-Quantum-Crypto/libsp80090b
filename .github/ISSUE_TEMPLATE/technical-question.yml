@@ -1,0 +1,27 @@
+name: Technical detail request
+description: Ask for clarification or a deeper technical detail on one of the notes.
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for your interest. Please check the notes and `ERRATA.md` first. For private matters, see CONTACT.md."
+  - type: dropdown
+    id: note
+    attributes:
+      label: Note
+      options: ["NT-01 (method)", "NT-02 (API and labs)", "NT-03 (practice)", "Several / general"]
+    validations: { required: true }
+  - type: input
+    id: section
+    attributes: { label: "Section, table or figure", placeholder: "e.g. NT-03 §5.2, Table 5" }
+    validations: { required: true }
+  - type: textarea
+    id: question
+    attributes: { label: Question, description: "What would you like explained in more depth?" }
+    validations: { required: true }
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: "Noise source type, target platform (MCU, FPGA, Linux SoC...), goal (research, teaching, product, ESV)."

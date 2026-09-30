@@ -1,0 +1,10 @@
+Lab 4 - conditioning (SP 800-90B Section 3.1.5), libsp80090b
+results: lab/results/lab4_conditioning   2026-09-25 16:45
+full entropy: h_out within 2^-32 of n_out and h_in >= n_out + 64 (FIPS 140-3 IG D.K)
+
+CASE                     TYPE       H_IN       H_PRIME    H_OUT      TIME      CONCLUSION
+nonvetted-0.99           non-vetted 409.6000   0.9900     253.4400   0.00 s    not full: credit 253.4400 of 256 bits
+nonvetted-urandom        non-vetted 409.6000   0.9154     234.3382   33.92 s   not full: credit 234.3382 of 256 bits
+vetted-128-short         vetted     128        -          128        0.00 s    not full: credit 128 of 256 bits
+vetted-256-full          vetted     256        -          251.6898   0.00 s    not full: credit 251.6898 of 256 bits
+vetted-320-margin        vetted     320        -          256.0000   0.00 s    FULL ENTROPY (if the function strength is >= 256)

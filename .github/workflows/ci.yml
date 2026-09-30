@@ -1,0 +1,75 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build-check:
+    name: build + NIST selftest (${{ matrix.cc }})
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        cc: [gcc]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Dependencies
+        run: sudo apt-get update && sudo apt-get install -y libdivsufsort-dev libbz2-dev
+      - name: Build
+        run: make CC=${{ matrix.cc }} all
+      - name: make check (NIST selftest, tolerance 1e-10, and API self-test)
+        run: |
+          chmod +x selftest/selftest selftest/compareresults.pl
+          set -o pipefail
+          make check | tee check.log
+          ! grep -qE "Significant difference|No corresponding value|Found extra data item" check.log
+          grep -q "SUCCESS: 0 failure" check.log
+
+  sanitizers:
+    name: ASan + UBSan smoke test
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y libdivsufsort-dev libbz2-dev
+      - name: Build with sanitizers
+        run: |
+          gcc -std=c99 -O1 -g -fopenmp -fsanitize=address,undefined -fno-sanitize-recover=all \
+              -fno-omit-frame-pointer -I./include src/test_non_iid.c src/sp80090b_api.c \
+              -ldivsufsort -ldivsufsort64 -lbz2 -lm -o test_non_iid_asan
+      - name: Run on NIST reference datasets
+        run: for f in rand1_short rand4_short biased-random-bytes; do ./test_non_iid_asan bin/$f.bin; done
+
+  docs-code:
+    name: NT-02 integration code compiles
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y libdivsufsort-dev libbz2-dev
+      - run: make lib
+      - name: Extract and compile the C blocks of NT-02 §5
+        run: |
+          python3 - <<'PY'
+          import re
+          s = open('docs/pub/en/NT-02_en.md', encoding='utf-8').read()
+          blocks = [b for t, b in re.findall(r"```([^\n]*)\n(.*?)```", s, re.S)
+                    if t.startswith(("Conformity decision", "Continuous health tests", "Start-up and seed"))]
+          assert len(blocks) == 3, len(blocks)
+          main = r'''
+          #include <stdio.h>
+          uint8_t read_hardware_noise_sample(void) { static uint32_t x = 1; x = x * 1103515245u + 12345u; return (uint8_t)(x >> 16); }
+          int main(void) {
+              health_ctx_t c; uint8_t seed[94];
+              health_init(&c, 4.0927, false);
+              if (c.rct_c != 6 || c.apt_w != 512 || c.apt_c != 59) return 1;
+              health_init(&c, 1.0, true);
+              if (c.rct_c != 21 || c.apt_w != 1024 || c.apt_c != 589) return 1;
+              health_init(&c, 4.0927, false);
+              (void)verify_entropy_compliance;
+              return health_startup(&c) || collect_drbg_seed(&c, seed, sizeof seed);
+          }'''
+          open('nt02_code.c', 'w').write("\n".join(blocks) + main)
+          PY
+          gcc -std=c99 -Wall -Wextra -Werror -O2 -fopenmp -I./include nt02_code.c libsp80090b.a \
+              -ldivsufsort -ldivsufsort64 -lbz2 -lm -o nt02_code && ./nt02_code

@@ -1,0 +1,17 @@
+# build outputs
+*.o
+*.a
+*.so
+test_c
+test_iid
+test_non_iid
+test_restart
+test_conditioning
+test_selftest
+lab/jent_record
+# generated data and selftest outputs (regenerate with lab/gen_data.sh --seed 90 and make check)
+lab/data/
+selftest/*.res
+# editor / OS
+*~
+.DS_Store

@@ -1,0 +1,13 @@
+Opening file: 'lab/data/lab1_iid/ringosc-slow.bin'
+Loaded 1000000 samples, 1-bit-wide symbols
+
+** Passed chi square tests
+
+** Passed length of longest repeated substring test
+
+** Failed IID permutation tests
+
+H_original: 0.996084
+
+The IID assumption is rejected: use lab_non_iid.
+time: 137.30 s

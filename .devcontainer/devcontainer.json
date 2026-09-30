@@ -1,0 +1,11 @@
+{
+  "name": "libsp80090b",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+  "hostRequirements": { "cpus": 4, "memory": "8gb" },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y build-essential libdivsufsort-dev libbz2-dev openssl gawk && chmod +x lab/*.sh selftest/selftest selftest/compareresults.pl && make",
+  "postAttachCommand": "echo 'libsp80090b is built. Try: make check, then lab/run_all.sh (see EXPERIMENTS.md).'",
+  "customizations": {
+    "vscode": { "extensions": ["ms-vscode.cpptools"] },
+    "codespaces": { "openFiles": ["EXPERIMENTS.md"] }
+  }
+}

@@ -1,0 +1,7 @@
+*.bin binary
+*.pdf binary
+*.docx binary
+*.png binary
+*.sh text eol=lf
+*.pl text eol=lf
+selftest/selftest text eol=lf

@@ -1,0 +1,4 @@
+restart-frozen.bin: H_I = 7.3230694001421144  Sanity check: FAILED (X_max 1000, X_cutoff 23) 
+restart-thermal.bin: H_I = 4.0927022425253634  Validation Test Passed... Sanity check: passed (X_max 39, X_cutoff 99) Validation: passed (H_r 5.306244, H_c 5.306249, H_I 4.092702) Entropy after the restart test: min(H_r, H_c, H_I) = 4.092702 
+restart-urandom.bin: H_I = 7.3230694001421144  Validation Test Passed... Sanity check: passed (X_max 15, X_cutoff 24) Validation: passed (H_r 7.718814, H_c 7.353758, H_I 7.323069) Entropy after the restart test: min(H_r, H_c, H_I) = 7.323069 
+restart-warmup.bin: H_I = 4.0927022425253634  Sanity check: FAILED (X_max 1000, X_cutoff 99) 

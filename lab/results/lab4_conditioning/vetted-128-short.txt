@@ -1,0 +1,7 @@
+n_in = 256
+n_out = 256
+nw = 256
+h_in = 128
+Output_Entropy(*) = 128
+(Vetted) h_out = 128
+time: 0.00 s

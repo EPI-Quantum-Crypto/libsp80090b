@@ -1,0 +1,8 @@
+n_in = 320
+n_out = 256
+nw = 256
+h_in = 320
+Output_Entropy(*) = 255.9999999936720594811
+(Vetted) h_out = 255.9999999936720594811
+epsilon = 2^(-35.23561681669152145096): FIPS 140-3 IG D.K Resolution 19 Full Entropy if the conditioning component security strength is >= 256
+time: 0.00 s

@@ -1,0 +1,4 @@
+Warning: Symbols appear to be narrower than described.
+Symbol alphabet consists of 1 symbol. No entropy awarded...
+Command exited with non-zero status 255
+time: 0.09 s

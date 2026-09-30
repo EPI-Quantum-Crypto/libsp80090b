@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software or its technical notes, please cite them as below."
+title: "libsp80090b: NIST SP 800-90B entropy assessment as a C library, with technical notes NT-01 to NT-03"
+type: software
+authors:
+  - name: "EPI Quantum Crypto team"
+version: "2.0.0"
+date-released: "2026-09-30"
+license: MIT
+repository-code: "https://github.com/EPI-Quantum-Crypto/libsp80090b"
+abstract: >-
+  C99 library port of the NIST SP800-90B_EntropyAssessment tool (IID and non-IID
+  tracks, restart test, conditioning) assessing in-memory buffers, with a lab of
+  simulated noise sources of known entropy and three technical notes on
+  qualification methodology and hybrid RBG sizing (SP 800-90A/90C, FIPS 140-3).
+keywords: ["NIST SP 800-90B", "min-entropy", "TRNG", "entropy source", "health tests", "SP 800-90C", "FIPS 140-3"]

@@ -1,0 +1,16 @@
+libsp80090b is distributed under three sets of terms (full texts in LICENSES/):
+
+1. Code derived from the NIST reference tool SP800-90B_EntropyAssessment 1.1.8
+   (estimators in include/, orchestration in src/sp80090b_api.c, selftest/,
+   reference datasets in bin/): the NIST software notice, LICENSES/NIST-Software.txt.
+   The changes made to that code, and their dates, are listed in NOTICE.
+
+2. New code written for this project (library API, test programs, labs,
+   documentation build scripts), and the changes to the NIST-derived code:
+   MIT License, LICENSES/MIT.txt.
+
+3. Documentation (docs/, technical notes NT-01, NT-02, NT-03, figures):
+   Creative Commons Attribution 4.0 International, LICENSES/CC-BY-4.0.txt.
+
+Each source file states its terms in an SPDX-License-Identifier header.
+Third-party components are listed in NOTICE.

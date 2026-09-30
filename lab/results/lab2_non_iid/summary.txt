@@ -1,0 +1,7 @@
+Lab 2 - non-IID track (SP 800-90B Section 6.3), libsp80090b
+data: lab/data/lab2_non_iid   results: lab/results/lab2_non_iid   2026-09-25 16:43
+N384 / N256: raw samples for a 256-bit DRBG, instantiation / reseed (SP 800-90C)
+
+CASE            BITS H_ORIG     H_BITSTR   H_I        N384   N256   TIME      CONCLUSION
+thermal-lsb     1    0.921623   -          0.921623   417    278    6.23 s    raw source: credit at most H_I, after Lab 3
+urandom-1bit    1    0.856963   -          0.856963   449    299    5.59 s    conditioned output: NOT raw noise, never credit it

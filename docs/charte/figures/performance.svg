@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="520" viewBox="0 0 1000 520">
+<rect width="1000" height="520" fill="#FFFFFF"/>
+<text x="500" y="30" font-family="Arial, Liberation Sans, sans-serif" font-size="17" fill="#11203A" font-weight="bold" font-style="normal" text-anchor="middle">Durée par fichier de 10⁶ échantillons (échelle logarithmique)</text>
+<line x1="330" y1="55" x2="330" y2="456" stroke="#D3D9DF" stroke-width="1"/>
+<text x="330" y="478" font-family="Arial, Liberation Sans, sans-serif" font-size="13" fill="#6B7684" font-weight="normal" font-style="normal" text-anchor="middle">0,01 s</text>
+<line x1="424.474" y1="55" x2="424.474" y2="456" stroke="#D3D9DF" stroke-width="1"/>
+<text x="424.474" y="478" font-family="Arial, Liberation Sans, sans-serif" font-size="13" fill="#6B7684" font-weight="normal" font-style="normal" text-anchor="middle">0,1 s</text>
+<line x1="518.947" y1="55" x2="518.947" y2="456" stroke="#D3D9DF" stroke-width="1"/>
+<text x="518.947" y="478" font-family="Arial, Liberation Sans, sans-serif" font-size="13" fill="#6B7684" font-weight="normal" font-style="normal" text-anchor="middle">1 s</text>
+<line x1="613.421" y1="55" x2="613.421" y2="456" stroke="#D3D9DF" stroke-width="1"/>
+<text x="613.421" y="478" font-family="Arial, Liberation Sans, sans-serif" font-size="13" fill="#6B7684" font-weight="normal" font-style="normal" text-anchor="middle">10 s</text>
+<line x1="686.936" y1="55" x2="686.936" y2="456" stroke="#D3D9DF" stroke-width="1"/>
+<text x="686.936" y="478" font-family="Arial, Liberation Sans, sans-serif" font-size="13" fill="#6B7684" font-weight="normal" font-style="normal" text-anchor="middle">1 min</text>
+<line x1="781.41" y1="55" x2="781.41" y2="456" stroke="#D3D9DF" stroke-width="1"/>
+<text x="781.41" y="478" font-family="Arial, Liberation Sans, sans-serif" font-size="13" fill="#6B7684" font-weight="normal" font-style="normal" text-anchor="middle">10 min</text>
+<line x1="854.925" y1="55" x2="854.925" y2="456" stroke="#D3D9DF" stroke-width="1"/>
+<text x="854.925" y="478" font-family="Arial, Liberation Sans, sans-serif" font-size="13" fill="#6B7684" font-weight="normal" font-style="normal" text-anchor="middle">1 h</text>
+<line x1="900" y1="55" x2="900" y2="456" stroke="#D3D9DF" stroke-width="1"/>
+<text x="900" y="478" font-family="Arial, Liberation Sans, sans-serif" font-size="13" fill="#6B7684" font-weight="normal" font-style="normal" text-anchor="middle">3 h</text>
+<text x="318" y="87" font-family="Arial, Liberation Sans, sans-serif" font-size="14" fill="#1A1A1A" font-weight="normal" font-style="normal" text-anchor="end">Lab 4 : fonction approuvée</text>
+<rect x="330" y="68" width="4" height="26" rx="5" fill="#0FB5D6"/>
+<text x="338" y="87" font-family="Arial, Liberation Sans, sans-serif" font-size="13" fill="#11203A" font-weight="bold" font-style="normal" text-anchor="start">instantané</text>
+<text x="318" y="131" font-family="Arial, Liberation Sans, sans-serif" font-size="14" fill="#1A1A1A" font-weight="normal" font-style="normal" text-anchor="end">Lab 2 : fichier de 1 bit</text>
+<rect x="330" y="112" width="268.787" height="26" rx="5" fill="#0FB5D6"/>
+<rect x="330" y="112" width="254.982" height="26" rx="5" fill="#FFFFFF" fill-opacity="0.35"/>
+<text x="606.787" y="131" font-family="Arial, Liberation Sans, sans-serif" font-size="13" fill="#11203A" font-weight="bold" font-style="normal" text-anchor="start">5 à 7 s</text>
+<text x="318" y="175" font-family="Arial, Liberation Sans, sans-serif" font-size="14" fill="#1A1A1A" font-weight="normal" font-style="normal" text-anchor="end">Lab 4 : mesure de h′</text>
+<rect x="330" y="156" width="338.195" height="26" rx="5" fill="#0FB5D6"/>
+<rect x="330" y="156" width="268.787" height="26" rx="5" fill="#FFFFFF" fill-opacity="0.35"/>
+<text x="676.195" y="175" font-family="Arial, Liberation Sans, sans-serif" font-size="13" fill="#11203A" font-weight="bold" font-style="normal" text-anchor="start">7 à 38 s</text>
+<text x="318" y="219" font-family="Arial, Liberation Sans, sans-serif" font-size="14" fill="#1A1A1A" font-weight="normal" font-style="normal" text-anchor="end">Lab 1 : fichier IID</text>
+<rect x="330" y="200" width="354.831" height="26" rx="5" fill="#0FB5D6"/>
+<rect x="330" y="200" width="302.705" height="26" rx="5" fill="#FFFFFF" fill-opacity="0.35"/>
+<text x="692.831" y="219" font-family="Arial, Liberation Sans, sans-serif" font-size="13" fill="#11203A" font-weight="bold" font-style="normal" text-anchor="start">16 à 57 s</text>
+<text x="318" y="263" font-family="Arial, Liberation Sans, sans-serif" font-size="14" fill="#1A1A1A" font-weight="normal" font-style="normal" text-anchor="end">Lab 2 : fichier de 4 ou 8 bits</text>
+<rect x="330" y="244" width="351.846" height="26" rx="5" fill="#0FB5D6"/>
+<rect x="330" y="244" width="329.842" height="26" rx="5" fill="#FFFFFF" fill-opacity="0.35"/>
+<text x="689.846" y="263" font-family="Arial, Liberation Sans, sans-serif" font-size="13" fill="#11203A" font-weight="bold" font-style="normal" text-anchor="start">31 à 53 s</text>
+<text x="318" y="307" font-family="Arial, Liberation Sans, sans-serif" font-size="14" fill="#1A1A1A" font-weight="normal" font-style="normal" text-anchor="end">Lab 3 : redémarrage 1 000 × 1 000</text>
+<rect x="330" y="288" width="365.541" height="26" rx="5" fill="#0FB5D6"/>
+<rect x="330" y="288" width="346.034" height="26" rx="5" fill="#FFFFFF" fill-opacity="0.35"/>
+<text x="703.541" y="307" font-family="Arial, Liberation Sans, sans-serif" font-size="13" fill="#11203A" font-weight="bold" font-style="normal" text-anchor="start">46 à 74 s</text>
+<text x="318" y="351" font-family="Arial, Liberation Sans, sans-serif" font-size="14" fill="#1A1A1A" font-weight="normal" font-style="normal" text-anchor="end">Lab 1 : 10 000 permutations, sans bzip2</text>
+<rect x="330" y="332" width="402.011" height="26" rx="5" fill="#0FB5D6"/>
+<rect x="330" y="332" width="385.375" height="26" rx="5" fill="#FFFFFF" fill-opacity="0.35"/>
+<text x="740.011" y="351" font-family="Arial, Liberation Sans, sans-serif" font-size="13" fill="#11203A" font-weight="bold" font-style="normal" text-anchor="start">2 à 3 min</text>
+<text x="318" y="395" font-family="Arial, Liberation Sans, sans-serif" font-size="14" fill="#1A1A1A" font-weight="normal" font-style="normal" text-anchor="end">Lab 2 : replay</text>
+<rect x="330" y="376" width="441.738" height="26" rx="5" fill="#11203A"/>
+<text x="779.738" y="395" font-family="Arial, Liberation Sans, sans-serif" font-size="13" fill="#11203A" font-weight="bold" font-style="normal" text-anchor="start">7 min 54 s</text>
+<text x="318" y="439" font-family="Arial, Liberation Sans, sans-serif" font-size="14" fill="#1A1A1A" font-weight="normal" font-style="normal" text-anchor="end">Lab 1 : compression bzip2 en échec</text>
+<rect x="330" y="420" width="522.82" height="26" rx="5" fill="#B03A2E"/>
+<rect x="330" y="420" width="509.302" height="26" rx="5" fill="#FFFFFF" fill-opacity="0.35"/>
+<text x="860.82" y="439" font-family="Arial, Liberation Sans, sans-serif" font-size="13" fill="#11203A" font-weight="bold" font-style="normal" text-anchor="start">41 à 57 min</text>
+<line x1="330" y1="55" x2="330" y2="456" stroke="#11203A" stroke-width="1.5"/>
+</svg>

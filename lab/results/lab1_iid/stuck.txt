@@ -1,0 +1,5 @@
+Error -3: Symbol alphabet consists of 1 symbol. No entropy awarded...
+Opening file: 'lab/data/stuck.bin'
+Loaded 1000000 samples, 8-bit-wide symbols
+Command exited with non-zero status 253
+time: 0.08 s

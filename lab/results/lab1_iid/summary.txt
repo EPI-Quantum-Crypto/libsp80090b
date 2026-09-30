@@ -1,0 +1,9 @@
+Lab 1 - IID track (SP 800-90B Section 5), libsp80090b
+data: lab/data/lab1_iid   results: lab/results/lab1_iid   2026-09-25 16:34
+
+CASE            CHI2   LRS    PERM   H          TIME      CONCLUSION
+biased-1bit     pass   pass   pass   0.413507   55.51 s   IID accepted: H = H_original is usable
+ringosc-slow    pass   pass   FAIL   0.996084   137.30 s  IID rejected: assess with Lab 2 (non-IID)
+stuck           -      -      -      -          0.08 s    refused: one symbol, dead source
+thermal-lsb     pass   pass   pass   0.992437   24.70 s   IID accepted: H = H_original is usable
+thermal         pass   pass   pass   5.617932   22.75 s   IID accepted: H = H_original is usable

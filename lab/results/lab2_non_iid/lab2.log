@@ -1,0 +1,18 @@
+aging.bin: H_original = 3.4093754977790334  H_bitstring = 0.42263775051671187  H_I = 3.381102004133695
+biased-1bit.bin: H_original = 0.24982483827386573  H_bitstring = 1  H_I = 0.24982483827386573
+drbg-zero-seed.bin: H_original = 7.3537577331212258  H_bitstring = 0.89312423102387883  H_I = 7.1449938481910307
+drift.bin: H_original = 4.1907831824306845  H_bitstring = 0.30505354857968892  H_I = 2.4404283886375113
+interference.bin: H_original = 3.733612613992769  H_bitstring = 0.42880551489947633  H_I = 3.4304441191958106
+lowpass.bin: H_original = 3.9763394066958573  H_bitstring = 0.4060468133693213  H_I = 3.2483745069545704
+openssl.bin: H_original = 6.6383827354578617  H_bitstring = 0.90771585766455132  H_I = 6.6383827354578617
+replay.bin: H_original = 1.5940282593232992e-06  H_bitstring = 4.2453606860859724e-07  H_I = 1.5940282593232992e-06
+ringosc-fast.bin: H_original = 0.1096406157760106  H_bitstring = 1  H_I = 0.1096406157760106
+ringosc-slow.bin: H_original = 0.86075515633029853  H_bitstring = 1  H_I = 0.86075515633029853
+saturated.bin: H_original = 1.844298196609655  H_bitstring = 0.21590082502982499  H_I = 1.7272066002386
+stuck.bin: refused: Error -3: Symbol alphabet consists of 1 symbol. No entropy awarded...
+thermal.bin: H_original = 5.4922032590302923  H_bitstring = 0.51158778031567043  H_I = 4.0927022425253634
+thermal-lsb.bin: H_original = 0.92162256445118362  H_bitstring = 1  H_I = 0.92162256445118362
+urandom-1bit.bin: H_original = 0.85696265506477098  H_bitstring = 1  H_I = 0.85696265506477098
+urandom-4bit.bin: H_original = 3.6678068235475725  H_bitstring = 0.88486134567971064  H_I = 3.5394453827188426
+urandom.bin: H_original = 7.3537577331212258  H_bitstring = 0.9153836750177643  H_I = 7.3230694001421144
+warmup.bin: H_original = 1.0189415762656822  H_bitstring = 0.14039666036635681  H_I = 1.0189415762656822

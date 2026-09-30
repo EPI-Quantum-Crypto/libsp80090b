@@ -1,0 +1,11 @@
+Opening file: 'lab/data/lab1_iid/biased-1bit.bin'
+Loaded 1000000 samples, 1-bit-wide symbols
+
+** Passed chi square tests
+
+** Passed length of longest repeated substring test
+
+** Passed IID permutation tests
+
+H_original: 0.413507
+time: 55.51 s

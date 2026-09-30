@@ -1,0 +1,34 @@
+libsp80090b
+Copyright (c) 2026 EPI Quantum Crypto team
+
+Acknowledgment
+--------------
+This software is derived from SP800-90B_EntropyAssessment, version 1.1.8,
+developed by the National Institute of Standards and Technology (NIST),
+https://github.com/usnistgov/SP800-90B_EntropyAssessment.
+NIST is the source of the original software. The original NIST notice is
+reproduced in LICENSES/NIST-Software.txt. This project is not affiliated
+with or endorsed by NIST.
+
+Changes to the NIST software (per the NIST notice)
+--------------------------------------------------
+2026, EPI Quantum Crypto team:
+  - Port of the C++11 code base to C99 (include/*.h): estimators of
+    SP 800-90B sections 5 and 6.3, restart and conditioning computations.
+  - New library API (include/sp80090b.h, src/sp80090b_api.c) replacing the
+    ea_iid, ea_non_iid, ea_restart and ea_conditioning executables: in-memory
+    buffers, options and result structures, return codes and warnings.
+  - Removal of the jsoncpp, GMP, MPFR and OpenSSL dependencies.
+  - Thread-local state for concurrent assessments; OpenMP parallelisation kept.
+  - Self-test tolerance tightened from 1e-6 to 1e-10 (selftest/compareresults.pl).
+  - New programs: test_* (src/), labs and dataset generator (lab/).
+
+Third-party components
+----------------------
+  - Cephes Mathematical Library, Copyright 1984, 1995, 2000 by Stephen L. Moshier
+    (functions in include/chi_square_tests.h, as in the NIST tool).
+  - Linked at build time, not distributed: libdivsufsort (Y. Mori, MIT License),
+    libbz2 (bzip2, BSD-style license), libgomp (GCC runtime library exception).
+  - lab/jent_record.c uses, but does not include, the Jitter RNG
+    (jitterentropy-library, S. Mueller), obtained separately (JENT_SRC).
+  - bin/ and selftest/refdata/: reference datasets and outputs of the NIST tool.

@@ -1,0 +1,7 @@
+Lab 3 - restart test (SP 800-90B Section 3.1.4), libsp80090b
+data: lab/data/lab3_restart   results: lab/results/lab3_restart   2026-09-25 16:44
+H = min(H_r, H_c, H_I) is the validated entropy per sample; it fails if X_max > X_cutoff
+(the restarts replay) or if min(H_r, H_c) < H_I / 2
+
+CASE             H_I       X_CUTOFF X_MAX  H_R       H_C       H         TIME      CONCLUSION
+restart-frozen   7.000000  27       1000   -         -         -         37.39 s   FAILED: the restarts replay (X_max > X_cutoff), source rejected

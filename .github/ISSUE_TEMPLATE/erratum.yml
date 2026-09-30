@@ -1,0 +1,19 @@
+name: Erratum or bug report
+description: Report an error in a note or a bug in the code.
+title: "[Erratum] "
+labels: ["erratum"]
+body:
+  - type: input
+    id: location
+    attributes: { label: "Note or code version, section, file", placeholder: "e.g. NT-01 v5.0, Table 7" }
+    validations: { required: true }
+  - type: textarea
+    id: issue
+    attributes: { label: What is wrong }
+    validations: { required: true }
+  - type: textarea
+    id: fix
+    attributes: { label: Proposed correction }
+  - type: textarea
+    id: reference
+    attributes: { label: "Supporting reference", description: "Clause of SP 800-90B / 90C / FIPS 140-3 IG, computation or measurement." }

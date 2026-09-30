@@ -1,0 +1,13 @@
+Opening file: 'lab/data/thermal.bin'
+Loaded 1000000 samples, 8-bit-wide symbols
+
+** Passed chi square tests
+
+** Passed length of longest repeated substring test
+
+** Passed IID permutation tests
+
+H_bitstring: 0.998264
+H_original: 5.617932
+min(H_original, 8 X H_bitstring): 5.617932
+time: 22.75 s
